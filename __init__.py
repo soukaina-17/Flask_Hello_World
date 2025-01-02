@@ -37,7 +37,7 @@ def somme(valeur1, valeur2):
 @app.route('/somme/<int:valeur1>/<int:valeur2>')
 def somme(valeur1, valeur2):
     result = valeur1 + valeur2
-    return f"<h2> la somme de {valeur1} et {valeur2} est : {result}</h2>"
+    #return f"<h2> la somme de {valeur1} et {valeur2} est : {result}</h2>"
 
     # Vérification si la somme est paire ou impaire
     if result % 2 == 0:
