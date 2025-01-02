@@ -33,10 +33,11 @@ def somme(valeur1, valeur2):
     return f"<h2>La somme de deux valeurs est : {result}</h2>"
   """
 
+# la fonction permettant de faire la somme de 2 valeurs
 @app.route('/somme/<int:valeur1>/<int:valeur2>')
 def somme(valeur1, valeur2):
     result = valeur1 + valeur2
-    return f"<h2> {valeur1} + {valeur2} = : {result}</h2>"
+    return f"<h2> la somme de {valeur1} et {valeur2} est : {result}</h2>"
 
 
 
