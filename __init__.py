@@ -39,6 +39,15 @@ def somme(valeur1, valeur2):
     result = valeur1 + valeur2
     return f"<h2> la somme de {valeur1} et {valeur2} est : {result}</h2>"
 
+    # Vérification si la somme est paire ou impaire
+    if result % 2 == 0:
+        parite = "paire"
+    else:
+        parite = "impaire"
+    
+    return f"<h2>La somme de {valeur1} et {valeur2} est : {result} et elle est {parite}.</h2>"
+
+
 
 
                                                                                                                
