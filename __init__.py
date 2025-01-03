@@ -47,6 +47,23 @@ def somme(valeur1, valeur2):
     
     return f"<h2>La somme de {valeur1} et {valeur2} est : {result} et elle est {parite}.</h2>"
 
+#Exercice 6 : Somme de toutes les valeurs
+
+@app.route('/somme_valeurs/<values>')
+def somme_valeurs(values):
+    # Diviser les valeurs saisies par des virgules en une liste
+    valeurs = values.split(',')
+    
+    # Convertir chaque élément de la liste en entier
+    valeurs_entiers = [int(val) for val in valeurs]
+    
+    # Calculer la somme de toutes les valeurs
+    result = sum(valeurs_entiers)
+    
+    # Retourner le résultat
+    return f"<h2>La somme des valeurs {', '.join(values.split(','))} est : {result}</h2>"
+
+
 
 
 
