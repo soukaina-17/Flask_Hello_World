@@ -49,6 +49,7 @@ def somme(valeur1, valeur2):
 
 #Exercice 6 : Somme de toutes les valeurs
 
+"""
 @app.route('/somme_valeurs/<values>')
 def somme_valeurs(values):
     # Diviser les valeurs saisies par des virgules en une liste
@@ -62,6 +63,25 @@ def somme_valeurs(values):
     
     # Retourner le résultat
     return f"<h2>La somme des valeurs {', '.join(values.split(','))} est : {result}</h2>"
+    """
+
+@app.route('/somme_valeurs/<path:values>')
+def somme_valeurs(values):
+    # Diviser les valeurs saisies par des / en une liste
+    valeurs = values.split('/')  # Utiliser '/' comme séparateur
+    
+    try:
+        # Convertir chaque élément de la liste en float pour gérer les entiers, décimaux, et négatifs
+        valeurs_floats = [float(val) for val in valeurs]
+    except ValueError:
+        return "Toutes les valeurs doivent être des nombres valides (entiers, décimaux, ou négatifs).", 400
+
+    # Calculer la somme de toutes les valeurs
+    result = sum(valeurs_floats)
+    
+    # Retourner le résultat formaté
+    return f"<h2>La somme des valeurs {' / '.join(valeurs)} est : {result}</h2>"
+
 
 
 
