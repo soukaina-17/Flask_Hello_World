@@ -12,73 +12,124 @@
         <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Ma photo" class="photo-cv">
         
         <!-- Informations personnelles -->
-        <h1>Soukaina EL JAOUHARI</h1> <!-- Remplace par ton nom -->
-        <p><strong>Profession :</strong> Développeur Web</p> <!-- Remplace par ta profession -->
-        <p><strong>Description :</strong> Passionnée par le développement web, je me spécialise dans le développement d'applications web en utilisant des technologies modernes.</p> <!-- Remplace par ta description -->
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+
+            <section class="section">
+                <h2>Données personnelles</h2>
+                <table>
+                    <tr>
+                        <td><strong>Nom :</strong></td>
+                        <td>EL JAOUHARI Soukaina</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adresse :</strong></td>
+                        <td>Palaiseau, France</td>
+                    </tr>
+                    <tr>
+                        <td><strong>N° de Téléphone :</strong></td>
+                        <td>06 02 48 79 59</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adresse email :</strong></td>
+                        <td><a href="mailto:soukaina.ljaouhari@gmail.com">soukaina.ljaouhari@gmail.com</a></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </header>
 
     <!-- Expériences professionnelles -->
-    <section class="experience">
-        <h2>Expériences professionnelles</h2>
+    <section class="section">
+        <h2>Parcours professionnel</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Poste</th>
-                    <th>Entreprise</th>
-                    <th>Durée</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Développeur Web Junior</td>
-                    <td>Entreprise ABC</td>
-                    <td>2023 - Présent</td>
-                </tr>
-                <tr>
-                    <td>Stagiaire Développement Web</td>
-                    <td>Entreprise XYZ</td>
-                    <td>2022 - 2023</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Période</th>
+                <th>Entreprise</th>
+                <th>Activités</th>
+            </tr>
+            <tr>
+                <td>De 10/2018 à 03/2019</td>
+                <td>Entreprise XX, Lieu</td>
+                <td>
+                    <ul>
+                        <li>Responsable service clients</li>
+                        <li>Management d'une équipe de 12 personnes</li>
+                        <li>Développement de la stratégie du service clients</li>
+                        <li>Organisation de formations</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>De MM/AAAA à MM/AAAA</td>
+                <td>Entreprise XX, Lieu</td>
+                <td>
+                    <ul>
+                        <li>Position/Activité/Niveau de responsabilité</li>
+                        <li>Mission ou projet</li>
+                        <li>Mission ou projet</li>
+                    </ul>
+                </td>
+            </tr>
         </table>
     </section>
 
     <!-- Formations -->
-    <section class="formation">
-        <h2>Formations</h2>
+    <section class="section">
+        <h2>Formation</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Diplôme</th>
-                    <th>Établissement</th>
-                    <th>Année</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Licence en Développement Web</td>
-                    <td>Université ABC</td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td>Certificat JavaScript</td>
-                    <td>Plateforme en ligne</td>
-                    <td>2021</td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Année</th>
+                <th>Établissement</th>
+                <th>Détails</th>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>Université XX, Lieu</td>
+                <td>
+                    <ul>
+                        <li>Diplôme : master en communication</li>
+                        <li>Cursus : management international</li>
+                        <li>Spécialisation : pays hispanophones</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Université XX, Lieu</td>
+                <td>
+                    <ul>
+                        <li>Diplôme : master en communication</li>
+                        <li>Cursus : management international</li>
+                        <li>Spécialisation : pays hispanophones</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>De 02/2010 à 02/2011</td>
+                <td>Lycée XX, Lieu</td>
+                <td>Baccalauréat mention très bien</td>
+            </tr>
         </table>
     </section>
 
     <!-- Compétences -->
-    <section class="competences">
-        <h2>Compétences</h2>
+    <section class="section">
+        <h2>Compétences clés</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Flask, Django</li>
-            <li>Gestion de projet Agile</li>
-            <li>Communication et travail en équipe</li>
+            <li>Maîtrise des programmes de traitement de texte</li>
+            <li>Workshop sur l'utilisation avancée de Photoshop</li>
         </ul>
     </section>
+
+    <!-- Intérêts personnels -->
+    <section class="section">
+        <h2>Intérêts personnels</h2>
+        <ul>
+            <li>Membre d'une association de lutte contre le changement climatique</li>
+            <li>Sports d'équipe</li>
+        </ul>
+    </section>
+
 </body>
 </html>
-
