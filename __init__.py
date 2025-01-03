@@ -83,9 +83,29 @@ def somme_valeurs(values):
     return f"<h2>La somme des valeurs {' / '.join(valeurs)} est : {result}</h2>"
 
 
+#Exercice 7 : La valeur la plus importantes
 
+@app.route('/max_valeur/<path:values>')
+def max_valeur(values):
+    # Diviser les valeurs saisies par des / en une liste
+    valeurs = values.split('/')  # Utilisation de '/' comme séparateur pour séparer les valeurs saisies par l'utilisateur
+    
+    try:
+        # Convertir chaque élément de la liste en float pour gérer les entiers, décimaux et négatifs
+        # Ici, on utilise une boucle (dans la liste de compréhension) pour parcourir chaque valeur
+        valeurs_floats = [float(val) for val in valeurs]
+    except ValueError:
+        # Si une des valeurs n'est pas convertible en float (par exemple du texte), on renvoie un message d'erreur
+        return "Toutes les valeurs doivent être des nombres valides (entiers, décimaux, ou négatifs).", 400
 
+    # Trouver la valeur maximale parmi les valeurs converties
+    # La fonction max() est utilisée pour obtenir la plus grande valeur dans la liste 'valeurs_floats'
+    max_val = max(valeurs_floats)
 
+    # Retourner le résultat formaté
+    # On va afficher les valeurs saisies sous forme de texte, séparées par des virgules
+    # Le résultat max est aussi affiché directement sans parenthèses
+    return f"<h2>La valeur maximale parmi {', '.join(values.split('/'))} est : {max_val}</h2>"
 
                                                                                                                
 if __name__ == "__main__":
