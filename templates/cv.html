@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cv.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Photo de l'utilisateur -->
+        <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Ma photo" class="photo-cv">
+        
+        <!-- Informations personnelles -->
+        <h1>Soukaina EL JAOUHARI</h1> <!-- Remplace par ton nom -->
+        <p><strong>Profession :</strong> Développeur Web</p> <!-- Remplace par ta profession -->
+        <p><strong>Description :</strong> Passionnée par le développement web, je me spécialise dans le développement d'applications web en utilisant des technologies modernes.</p> <!-- Remplace par ta description -->
+    </header>
+
+    <!-- Expériences professionnelles -->
+    <section class="experience">
+        <h2>Expériences professionnelles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Poste</th>
+                    <th>Entreprise</th>
+                    <th>Durée</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Développeur Web Junior</td>
+                    <td>Entreprise ABC</td>
+                    <td>2023 - Présent</td>
+                </tr>
+                <tr>
+                    <td>Stagiaire Développement Web</td>
+                    <td>Entreprise XYZ</td>
+                    <td>2022 - 2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formations -->
+    <section class="formation">
+        <h2>Formations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Diplôme</th>
+                    <th>Établissement</th>
+                    <th>Année</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Licence en Développement Web</td>
+                    <td>Université ABC</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Certificat JavaScript</td>
+                    <td>Plateforme en ligne</td>
+                    <td>2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Compétences -->
+    <section class="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Flask, Django</li>
+            <li>Gestion de projet Agile</li>
+            <li>Communication et travail en équipe</li>
+        </ul>
+    </section>
+</body>
+</html>
 
