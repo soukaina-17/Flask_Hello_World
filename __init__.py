@@ -107,6 +107,12 @@ def max_valeur(values):
     # Le résultat max est aussi affiché directement sans parenthèses
     return f"<h2>La valeur maximale parmi {', '.join(values.split('/'))} est : {max_val}</h2>"
 
+#Exercice 8 : Mettre un CV en ligne
+@app.route('/cv/')
+def cv():
+    return render_template('cv.html')
+
+
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
